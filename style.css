@@ -1,0 +1,295 @@
+@import url(https://fonts.google.com/specimen/Abril+Fatface?query=abril);
+@import url(https://fonts.google.com/specimen/Poppins);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+font-family: 'Poppins';  
+background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+
+h3 {
+    font-family: 'Abril+Fatface';
+    
+}
+
+
+.header {
+    width: 100%;
+    overflow: visible;
+    margin: 0;
+    height: 60px;
+    position: fixed;
+}
+
+#header-logo {
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.logo,
+.navitems,
+.carrito {
+    display: flex;
+    margin: 50px;
+}
+.logo {
+    flex: 1;
+}
+
+nav{
+    flex: 3;
+}
+
+.navitems {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    
+}
+
+.navitem a{
+    text-decoration: none;
+    color: rgb(8, 163, 93);
+    font-size: 17px;
+}
+
+.navbar{
+    background-color: white;
+    height: 70px;
+    padding: 2px 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  
+}
+
+
+.navbar h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 20px;
+    line-height: 1;
+}
+
+
+  .navbar a:hover {
+    color: #9867C5;
+    border-bottom: 3px solid #9867C5;
+  }
+
+  .carrito {
+    flex: 1; 
+  }
+
+ .carrito {
+justify-content: flex-end;
+}
+
+#img-carrito {
+    height: 30px;
+    width: auto;
+    margin-left: 150px;
+    position: absolute;
+    align-self: center;
+}
+
+
+.info {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 500px;
+    padding: 0px 30px 30px 30px;
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.text h1 {
+    font-family: 'Abril+Fatface';
+    font-size: 2.5rem;
+}
+
+.text p {
+    padding: 15px 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+
+.image {
+    margin-left: 20px;
+}
+
+.input {
+    width: 75%;
+    height: 44px;
+
+    background: #FDFCFB;
+
+    border-radius: 5px 0 0 5px;
+    border: none;
+
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+}
+
+.button {
+    width: 23%;
+    height: 46px;
+    background-color: rgb(178, 229, 186);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+
+/* products section */
+
+#products h1 {
+    text-align: center;
+    margin: 50px auto -60px;
+    color: rgb(8, 163, 93);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Abril+fatface';
+}
+
+.main {
+    width: 470px;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.product {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 25px -5px rgb(253, 253, 253);
+    transition: transform .8s;
+    height: 372px;
+    margin: 50px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.product-logo {
+    width: 130px;
+    height: 130px;
+    border: 10px solid rgb(178, 229, 186);
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product h3 {
+    height: 35px;
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    position: relative;
+}
+
+.product h3::after,
+.product h3::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+    }
+
+.product h3::after {
+    background: linear-gradient(to right, #fff, rgb(146, 248, 165));
+    right: -5px;
+    top: -5px;
+    }
+
+.product h3::before {
+    background: linear-gradient(to right, rgb(146, 248, 165), #fff);
+    left: -5px;
+    bottom: -5px;
+    }
+    
+.main:hover .product {
+    transform: translateY(-40px);
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.product-colum {
+    flex: 3;
+        }
+
+i {
+    font-size: 50px;
+    color: black;
+    
+}
+
+.product p {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .text {
+        width: 500px;
+        padding: 25px 25px 25px 25px;
+        border-radius: 5px 5px 5px 5px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 50px;
+        flex: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .navitems {
+        display: none;
+    }
+    .row {
+        display: block;
+    }
+
+    .main {
+        min-height: 550px;
+    }
+    
+}

@@ -23,7 +23,7 @@ h3 {
     width: 100%;
     overflow: visible;
     margin: 0;
-    height: 60px;
+    height: 70px;
     position: fixed;
     z-index: 3;
 }
@@ -38,7 +38,7 @@ h3 {
 .navitems,
 .carrito {
     display: flex;
-    margin: 50px;
+    margin: 40px;
 }
 .logo {
     flex: 1;
